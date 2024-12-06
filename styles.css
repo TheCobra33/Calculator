@@ -1,0 +1,63 @@
+/* All body background with geen linear-gradient */
+body {
+    font-family: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;  
+    background: linear-gradient(to right, #d9ffd9, #6ed66e, #029c02);
+    color: #333;
+}
+
+/* calculator style*/
+#calculator {
+    width: auto;
+    max-width: 400px;
+    padding: 20px;  
+    background-color: #f19e7d;
+    border-radius: 10px;
+    box-shadow: 0 15px 8px rgba(133, 4, 238, 0.1);
+}
+
+/* Display style*/
+#display {
+    grid-column: 1 / -1;
+    box-sizing: border-box;
+    width: calc(100% -35px);
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8fa89;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 2em;
+}
+
+/* all buttons styles*/
+#button { 
+    width: 20%;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#span-two {
+    grid-column: span 2;
+  }
+
+/* changing buttons color by cursor over number buttons*/
+button:hover {
+    background-color: #f0ee84;
+
+}
+/* changing buttons color by cursor over operation buttons */
+button.operation:hover {
+    background-color: #ffab62;
+}
+/* AC and DEL buttons width settings*/
+button.span-two {
+    width: calc(38% + 10px);
+}
